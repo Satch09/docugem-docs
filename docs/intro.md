@@ -2,46 +2,27 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# DocuGem
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Technical documentation (datapacks) requirements generally revolve around a common set of data but represented in various ways. The reason for such variation stems from the type of technical question being asked ('What is our overall current consumption at this time?' 'We are upgrading the echoscopes, which cable types are compatible with the new connector?'), the technical datapack being compiled ('I need a termination schedule for all 10 panels, today') or the nature of the TSR being addressed; The later also has varying response time windows or deadlines. During inports there are sometimes misalignment of understanding between DBM and vendors or the inport team as a result of missing or inaccurate data capturing.
 
-## Getting Started
+### Proposal
+Implement technical design patterns as code based on declariative criteria (assign FJB io to io cards before everything else, assign ECP statuses to the last io card and in reverse order) and which also enforces safety and design requirements ( ensure that there is enough io card capacity + n% ).
 
-Get started by **creating a new site**.
+### Goals
+- Produce a greater catalogue of baseline technical documentation as a way of driving technical / project decision making processes as well as insights into current and past projects projects; reducing engineering time.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+### Potential Applications
+- Incease overall level of assurance offered as a team / department
+- Increase engineering efficiency and assurance by offering aggregated technical reports, datasheets are searched, downloaded and collated into datapacks
+- Integration into existing TSR system such that new configuration documents can be created ahead of time
+- Decrease build time with various reports tailored to simplying vendor / client specific technical requirements (build wants overview with terminal numbers, projects wants it without)
+- Compatibility with industry 4.0 analytical tools - db export
+- Integrate vendor configuration changes (these parts have been exchanged for these newer parts)
+- Produce Mining System configuration files which are vendor agnostic and conform to company defined convention
+- Automated technical auditing of tender submitted datapacks
+- Automated design datapack generation
+- Assurance that desgin standards and criteria have been implemented as of x date in response to learnings - audit / compliance
+- Generate single compressed datapack with subfolders which may be project / vendor specific for transmittal
+- Analytical insight into overall asset / project / operational configuration
+- Normalised and consistent naming conventions

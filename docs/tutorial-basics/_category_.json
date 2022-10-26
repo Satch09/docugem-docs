@@ -1,8 +1,8 @@
 {
-  "label": "Usage",
+  "label": "Reports",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Brief description of Docugem features"
+    "description": "Brief description of DocuGem reports"
   }
 }
